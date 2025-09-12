@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 
 $user = $_GET['userName'];
 $userPhone = $_GET['userPhone'];
@@ -8,6 +7,9 @@ $userEmail = $_GET['userEmail'];
 if(!isset($user) || !isset($userPhone)){
     header("Location: ./signIn.php");
 }
+
+
+
 
 ?>
 
@@ -256,6 +258,12 @@ if(!isset($user) || !isset($userPhone)){
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="message" class="form-label">Your Message *</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                        </div>
+
                         
                         
                         
@@ -287,6 +295,7 @@ if(!isset($user) || !isset($userPhone)){
                                         <p class="card-text small">4 pages</p>
                                     </div>
                                 </div>
+
                                 <div class="flyer-card card position-relative">
                                     <input type="checkbox" class="flyer-checkbox form-check-input" id="flyer3" value="pdf3">
                                     <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="flyer-img card-img-top" alt="Price List">
@@ -298,6 +307,7 @@ if(!isset($user) || !isset($userPhone)){
                                         <p class="card-text small">2 pages</p>
                                     </div>
                                 </div>
+
                                 <div class="flyer-card card position-relative">
                                     <input type="checkbox" class="flyer-checkbox form-check-input" id="flyer4" value="pdf4">
                                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="flyer-img card-img-top" alt="Special Offers">
@@ -463,4 +473,10 @@ if(!isset($user) || !isset($userPhone)){
         });
     </script>
 </body>
+
 </html>
+
+
+
+
+

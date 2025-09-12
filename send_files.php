@@ -1,4 +1,7 @@
 <?php
+
+
+
 require './Db/conn.php';
 
 date_default_timezone_set('Asia/Colombo'); // Sri Lanka timezone
@@ -16,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $n         = 0;
 
     // Validate required fields
-    if (empty($name) || empty($email) || empty($phone) || empty($flyers)) {
+    if (empty($name) || empty($email) || empty($phone) || empty($flyers)){
         echo json_encode(['success' => false, 'message' => 'Missing required fields.']);
         exit;
     }

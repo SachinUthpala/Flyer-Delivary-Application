@@ -886,4 +886,4 @@ $pendingRequests = $stmtPending->fetch(PDO::FETCH_ASSOC)['pending_requests'];
         });
     </script>
 </body>
-</html>
+</html>-
